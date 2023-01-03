@@ -16,7 +16,7 @@ type NFT struct {
 type SmartContract struct {
 	contractapi.Contract
 }
-
+./network.sh createChannel
 // Init is called when the contract is deployed
 func (s *SmartContract) Init(ctx contractapi.TransactionContextInterface) error {
 	fmt.Println("Smart contract initialized!")
